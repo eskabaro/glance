@@ -1,0 +1,11 @@
+.button {
+   @apply absolute w-12 h-12 rounded-full border-2 border-_black flex items-center justify-center z-10;
+
+   &:hover {
+      @apply border-none;
+   }
+
+   @media all and (max-width: 800px) {
+      @apply hidden;
+   }
+}

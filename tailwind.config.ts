@@ -14,7 +14,7 @@ const config: Config = {
         lavender: "#BCC5FF",
         lite: "#F6F6F6",
         gray: "#DEDEDE",
-        black: "#0C0C0C",
+        _black: "#0C0C0C",
         yellow: "#EBBA1A",
         gray_dark: "#454545"
       },
@@ -25,6 +25,7 @@ const config: Config = {
         "100%": "100%"
       },
       fontSize: {
+        big: "32px",
         h1: "20px",
         h2: "18px",
         h3_h4: "16px",
@@ -35,6 +36,14 @@ const config: Config = {
         "5%": "5%",
         "17px": "17px",
         "10px": "10px"
+      },
+      maxHeight: {
+        "211px": "211px",
+        "128px": "128px"
+      },
+      maxWidth: {
+        "200px": "200px",
+        "98px": "98px"
       }
     },
   },

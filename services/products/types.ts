@@ -21,3 +21,8 @@ export interface IProduct extends EntityInformation {
    category: string
    characteristics: string
 }
+
+export interface IGetDataMainPageRes {
+   category: ICategory[]
+   productsSales: IProduct[]
+}

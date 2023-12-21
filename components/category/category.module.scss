@@ -1,0 +1,45 @@
+.wrapper {
+   @apply overflow-hidden my-10;
+
+   >h1 {
+      @apply text-big font-normal text-_black mb-7;
+
+      @media all and (max-width: 800px) {
+         @apply text-xl;
+      }
+   }
+}
+
+.slide {
+   @apply w-full cursor-pointer; 
+
+   >div {
+      @apply bg-lavender rounded-lg overflow-hidden max-h-211px p-9 flex justify-center items-center;
+
+      &:hover {
+         >img {
+            @apply scale-105;
+         }
+      }
+
+      @media all and (max-width: 800px) {
+         @apply max-w-none max-h-none p-0 px-2;
+      }
+
+      >img {
+         @apply object-contain w-36 h-36 duration-200 ease-in-out;
+
+         @media all and (max-width: 800px) {
+            @apply h-32 w-24;
+         }
+      }
+   }
+   
+   >h1 {
+      @apply text-center text-xl font-light mt-4;
+
+      @media all and (max-width: 800px) {
+         @apply text-sm;
+      }
+   }
+}
