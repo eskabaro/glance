@@ -1,0 +1,23 @@
+.navigation > ul { 
+   @apply flex gap-8 justify-evenly;
+
+   >li {
+      @apply flex flex-col items-center gap-2;
+
+      >img {
+         @apply h-5 w-5;
+
+         @media all and (max-width: 800px) {
+            @apply h-4 w-4;
+         }
+      }
+
+      >span {
+         @apply text-h5_h6_h7 font-light;
+
+         @media all and (max-width: 800px) {
+            @apply text-xs;
+         }
+      }
+   }
+}

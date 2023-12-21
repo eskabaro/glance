@@ -1,0 +1,11 @@
+.button {
+   @apply px-17px py-10px bg-blue rounded-lg flex gap-2 items-center text-white shadow-xl duration-200 ease-in-out;
+
+   &:hover {
+      @apply opacity-90;
+   }
+
+   &:active {
+      @apply scale-95;
+   }
+}

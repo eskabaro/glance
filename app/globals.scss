@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body, html {
+   @apply bg-lite h-full;
+}
+
+input {
+   @apply outline-none;
+}

@@ -1,0 +1,42 @@
+.wrapper {
+   @apply border-b border-b-gray px-5%;
+
+   .header {
+      @apply max-w-7xl m-auto flex justify-between h-20 items-center gap-20;
+   
+      @media all and (max-width: 800px) {
+         @apply flex-col h-auto gap-6 py-6;
+      }
+   
+      &__logo {
+         @apply text-3xl bg-100% bg-gradient;
+         -webkit-background-clip: text;
+         -moz-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         -moz-text-fill-color: transparent;
+      }
+   
+      &__input_box {
+         @apply bg-gray h-10 rounded-lg flex gap-4 items-center px-4 w-full;
+   
+         >img {
+            @apply w-4 h-4;
+         }
+   
+         >input {
+            @apply bg-transparent h-full w-full py-14;
+   
+            &::placeholder {
+               @apply text-gray_dark;
+            }
+         }
+      }
+   
+      &__navigation {
+         @media all and (max-width: 800px) {
+            @apply hidden;
+         }
+      }
+   }
+}
+
