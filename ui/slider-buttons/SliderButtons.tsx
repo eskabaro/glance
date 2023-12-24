@@ -7,8 +7,11 @@ import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons
 import { useSpring, animated } from '@react-spring/web'
 import styles from './slide-buttons.module.scss'
 
+interface ISliderButtonsProps {
+   top: string
+}
 
-export const SliderButtons: FC = () => {
+export const SliderButtons: FC<ISliderButtonsProps> = ({ top }) => {
    const swiper = useSwiper()
    const springs = useSpring({
       from: { opacity: 0 },
@@ -18,10 +21,10 @@ export const SliderButtons: FC = () => {
 
    return (
       <>
-         <animated.button className={styles.button} onClick={() => swiper.slidePrev()} style={{ top: "81.5px", left: 10, ...springs }}>
+         <animated.button className={styles.button} onClick={() => swiper.slidePrev()} style={{ top, left: 10, ...springs }}>
             <FontAwesomeIcon icon={faChevronLeft} />
          </animated.button>
-         <animated.button className={styles.button} onClick={() => swiper.slideNext()} style={{ top: "81.5px", right: 10, ...springs }}>
+         <animated.button className={styles.button} onClick={() => swiper.slideNext()} style={{ top, right: 10, ...springs }}>
             <FontAwesomeIcon icon={faChevronRight} />
          </animated.button>
       </>

@@ -1,0 +1,12 @@
+.wrapper {
+   @apply flex items-center;
+
+   >div {
+      @apply h-3 flex;
+      gap: 2px;
+   }
+
+   >.select {
+      @apply outline-none appearance-none p-1 bg-transparent text-dark_grey;
+   }
+}

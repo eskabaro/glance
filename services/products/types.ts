@@ -4,9 +4,15 @@ type EntityInformation = {
    updateAdt: string
 }
 
+export interface IProductIvetn {
+   id: string
+   type: string
+}
+
 export interface ICategory extends EntityInformation {
    category: string
    image: string
+   slug: string
 }
 
 export interface IProduct extends EntityInformation {
@@ -19,7 +25,9 @@ export interface IProduct extends EntityInformation {
    inStock: "0" | "1"
    stars: number
    category: string
+   categorySlug: string
    characteristics: string
+   productIvetn: IProductIvetn[]
 }
 
 export interface IGetDataMainPageRes {

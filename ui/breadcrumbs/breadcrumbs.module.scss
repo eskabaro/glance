@@ -1,0 +1,11 @@
+.wrapper {
+   @apply flex gap-1;
+   
+   >a {
+      @apply text-h3_h4 font-normal text-smoke;
+
+      &.active {
+         @apply text-_black;
+      }
+   }
+}

@@ -1,0 +1,15 @@
+.wrapper {
+   @apply overflow-hidden my-10;
+
+   >.line {
+      @apply w-full border-b border-b-gray mt-7;
+   }
+
+   >h1 {
+      @apply text-big font-normal text-_black mb-7;
+
+      @media all and (max-width: 800px) {
+         @apply text-xl;
+      }
+   }
+}

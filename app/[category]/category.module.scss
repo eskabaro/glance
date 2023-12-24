@@ -1,0 +1,19 @@
+.sorting {
+   @apply flex justify-between;
+
+   >div {
+      @apply flex gap-2 items-center;
+   }
+}
+
+.wrapper_list {
+   @apply flex;
+
+   &__sorting {
+      width: 30%;
+   }
+
+   &__list {
+      width: 70%;
+   }
+}

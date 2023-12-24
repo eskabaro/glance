@@ -15,8 +15,11 @@ const config: Config = {
         lite: "#F6F6F6",
         gray: "#DEDEDE",
         _black: "#0C0C0C",
-        yellow: "#EBBA1A",
-        gray_dark: "#454545"
+        _yellow: "#EBBA1A",
+        gray_dark: "#454545",
+        _green: "#169B00",
+        smoke: "#ABABAB",
+        dark_grey: "#454545"
       },
       backgroundImage: {
         gradient: "linear-gradient(267deg, #260DC1 6.29%, #59006F 100%)"
@@ -35,7 +38,8 @@ const config: Config = {
         14: "14px",
         "5%": "5%",
         "17px": "17px",
-        "10px": "10px"
+        "10px": "10px",
+        "75px": "75px" 
       },
       maxHeight: {
         "211px": "211px",

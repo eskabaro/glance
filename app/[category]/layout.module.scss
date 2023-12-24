@@ -1,0 +1,16 @@
+.wrapper {
+   @apply mt-12;
+
+   >nav {
+      >.heading {
+         @apply flex items-center gap-5 my-8;
+
+         >button {
+         }
+
+         >h1 {
+            @apply text-big;
+         }
+      }
+   }
+}

@@ -17,7 +17,7 @@ export const NotFound: FC = () => {
          <Image src={"/illustrations.png"} width={307} height={339} alt="Помилка 404" />
          <p className="text-h2 font-normal" style={{ color: "#454545" }}>Перезавантажте сторінку або перевірте</p>
          <p className="text-h2 font-normal mb-6" style={{ color: "#454545" }}>з'єднання з інтернетом</p>
-         <Button func={() => replace("/")}>
+         <Button width="fit-content" func={() => replace("/")}>
             <FontAwesomeIcon icon={faChevronLeft} color="#fff" /> <p>На головну</p>
          </Button>
       </main>
